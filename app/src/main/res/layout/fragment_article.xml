@@ -13,6 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <!-- Title is hidden for now since we are using tabs -->
             <TextView
                 android:id="@+id/articleTitle"
                 style="@style/ArticleTitle"

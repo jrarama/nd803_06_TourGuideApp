@@ -34,9 +34,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 ListImageItem item = imageItems.get(position);
-                Toast.makeText(activity, item.getDescription(), Toast.LENGTH_SHORT);
-
-                Intent intent = new Intent(activity, BaguioActivity.class);
+                Intent intent = new Intent(activity, item.getTargetActivity());
                 activity.startActivity(intent);
             }
         });
@@ -44,10 +42,10 @@ public class MainActivity extends AppCompatActivity {
 
     private List<ListImageItem> getImageList() {
         return Arrays.asList(
-                new ListImageItem(R.drawable.baguio, getString(R.string.baguio_city), null),
-                new ListImageItem(R.drawable.boracay, getString(R.string.boracay), null),
-                new ListImageItem(R.drawable.cebu, getString(R.string.cebu_city), null),
-                new ListImageItem(R.drawable.palawan, getString(R.string.palawan), null)
+                new ListImageItem(R.drawable.baguio, getString(R.string.baguio_city), BaguioActivity.class),
+                new ListImageItem(R.drawable.boracay, getString(R.string.boracay), BoracayActivity.class),
+                new ListImageItem(R.drawable.cebu, getString(R.string.cebu_city), CebuActivity.class),
+                new ListImageItem(R.drawable.palawan, getString(R.string.palawan), PalawanActivity.class)
         );
     }
 }

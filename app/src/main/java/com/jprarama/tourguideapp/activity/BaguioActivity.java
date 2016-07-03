@@ -1,7 +1,5 @@
 package com.jprarama.tourguideapp.activity;
 
-import android.util.Log;
-
 import com.jprarama.tourguideapp.R;
 import com.jprarama.tourguideapp.model.ArticleItem;
 
@@ -17,8 +15,6 @@ public class BaguioActivity extends BaseDetailActivity {
 
     @Override
     public List<ArticleItem> getArticleItems() {
-        Log.w(TAG, "BaguioActivity getArticleItems");
-
         return new ArrayList<>(Arrays.asList(
                 new ArticleItem(getString(R.string.baguio_panagbenga_title),
                         R.drawable.baguio_panagbenga, getString(R.string.baguio_panagbenga_desc)),
