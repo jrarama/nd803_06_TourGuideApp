@@ -3,5 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="imageMaxHeight">180dp</dimen>
+    <dimen name="articleImageHeight">240dp</dimen>
     <dimen name="listImagePadding">16dp</dimen>
+    <dimen name="articleTextSize">16sp</dimen>
 </resources>
