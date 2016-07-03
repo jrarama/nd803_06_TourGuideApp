@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tour Guide App</string>
+    <string name="dummy_location">Dummy Location</string>
+    <string name="baguio_city">Baguio City, Philippines</string>
+    <string name="boracay">Boracay Island, Philippines</string>
+    <string name="cebu_city">Cebu City</string>
+    <string name="palawan">Palawan, Philippines</string>
+</resources>

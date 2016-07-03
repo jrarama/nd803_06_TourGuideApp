@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listImageLayout"
+    android:orientation="vertical"
+    android:padding="@dimen/listImagePadding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/listImage"
+        android:src="@drawable/baguio"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/imageMaxHeight"
+        android:scaleType="centerInside" />
+
+    <TextView
+        style="@style/ListImageTitle"
+        android:id="@+id/listImageTitle"
+        android:text="@string/dummy_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
